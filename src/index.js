@@ -1,5 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Header from "./header";
 import Funfacts from "./funFacts";
+import Footer from "./footer";
 
-ReactDOM.render(<Funfacts />, document.getElementById("root"));
+const page = (
+  <div>
+    <Header />
+    <Funfacts />
+    <Footer />
+  </div>
+);
+
+ReactDOM.render(page, document.getElementById("root"));
